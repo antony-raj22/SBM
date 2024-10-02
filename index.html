@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBM College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="sbm-logo.jpeg" alt="SBM College Logo">
+            <span><h3 class="SBM">SBM College</h3></span>
+            
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to SBM College</h1>
+            <p>Empowering Students for a Better Tomorrow</p>
+        </div>
+        
+    </section>
+    <section class="banner" id="banner">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="banner-content">
+                    <h3>ABOUT SBM COLLEGE OF ENGINEERING & TECHNOLOGY</h3>
+                    <h1>A Place for Learning, Discovering, Innovating & Expressing</h1>
+                    <p>
+                        The College is Recognized by the Government of Tamil Nadu and affiliated to Anna University.
+                        The SBM group was founded in 1998 with the aim of establishing institutions of global standards
+                        in various branches of Engineering and Technology, Management, Computer Applications, and also 
+                        Polytechnic, Commerce, and Science etc.
+                    </p>
+                    <div class="statistics">
+                        <div class="stat-item">
+                            <i class="fa fa-calendar"></i>
+                            <h4>14+</h4>
+                            <p>YEARS</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa fa-graduation-cap"></i>
+                            <h4>15+</h4>
+                            <p>COURSES</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa fa-users"></i>
+                            <h4>41+</h4>
+                            <p>STAFF</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa fa-building"></i>
+                            <h4>5+</h4>
+                            <p>BRANCH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" >
+        
+        <h2>About Us</h2>
+        <p class="text-justify"><i class="fa fa-check-square-o" style="color:#358854;"></i>  S.B.M. College of Engineering and Technology offers a high quality  education in an underdeveloped rural and semi-urban region of Dindigul, Tamil Nadu.  <br>
+            <i class="fa fa-check-square-o" style="color:#358854;"></i>  The College is affiliated to Anna University, Chennai and approved by AICTE, Delhi. <br>
+            <i class="fa fa-check-square-o" style="color:#358854;"></i>  Our Management extends its fullest support in building the institution as a centre of excellence with technically superior, 
+            ethically strong and competent engineers.  The campus is vibrant with in beautiful location, well connected by 
+            road and rail is easily accessible.  The eco-friendly ambience creates and bestows a healthy learning atmosphere.  
+            The multi-disciplinary institution is meticulous with exemplary modern laboratory, workshop facilities and state of 
+            art computer center providing an excellent infrastructure.  Good number of Doctorates, qualified, experienced, 
+            versatile and efficient faculty members mould the students diligently in ethical, moral and academic aspects.   
+        </p>
+       
+    </section>
+    <!-- HTML Structure -->
+
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
+        <div class="section-title text-center mb-4">
+            <h3 class="style_heading">LATEST NEWS</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="ece/ece4.webp" class="blog-img">
+            </div>
+            <div class="col-md-6">
+                <div class="blog-item">
+                    <div class="scrolling-text-container">
+                        <div class="blog-content scrolling-text">
+                            <h4 class="news_head">Tamil Nadu Engineering Admission, TNEA 2021, Rank List Released</h4>
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
+                                <span><i class="fa fa-user"></i> Owen Wilson</span>
+                            </div>
+                            <p>TNEA is a centralised admission process for undergraduate engineering courses (BTech courses).</p>
+                        </div>
+                    </div>
+    
+                    <div class="scrolling-text-container">
+                        <div class="blog-content scrolling-text">
+                            <h4 class="news_head">Anna University Admission 2024: Now, Undergraduate Courses Will Be Offered At All Campuses</h4>
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
+                                <span><i class="fa fa-user"></i> Owen Wilson</span>
+                            </div>
+                            <p>Undergraduate (UG) admission in Anna University is done on the basis of TNEA or Tamil Nadu Engineering Admissions.</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to animate each news item one by one
+document.addEventListener("DOMContentLoaded", function () {
+    const texts = document.querySelectorAll('.scrolling-text');
+    let index = 0;
+
+    function startScrolling() {
+        if (index < texts.length) {
+            // Start the animation of the current text
+            texts[index].style.animationPlayState = 'running';
+
+            // Wait for the current animation to finish
+            texts[index].addEventListener('animationend', () => {
+                index++;
+                startScrolling(); // Start the next text animation
+            }, { once: true });
+        }
+    }
+
+    startScrolling();
+});
+
+    </script>
+    <!-- Academics Section -->
+   
+    <section id="academics">
+        <h2>Academics</h2>
+        <h3 class="ug">UG Courses</h3>
+        <div class="row">
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('civil.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E <br> Civil Engineering</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('Mechanical.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E Mechanical Engineering</h4>
+                </div>
+            </div>
+    
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('it.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.Tech Information Technology</h4>
+                </div>   
+            </div>
+    
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('Bio Medical.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E Bio Medical Engineering</h4>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('csc.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E Computer Science &amp; Engineering</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('EEE.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E Electrical &amp; Electronics Engineering</h4>
+                </div>
+            </div>
+        
+            <div class="col-md-3 mt-2 committee_block">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.Tech Artificial Intelligence and Data Science</h4>
+                </div>
+            </div>
+        
+            <div class="col-md-3 mt-2 committee_block"onclick="navigateTo('ECE.html')">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">B.E Electronics &amp; Communication Engineering</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="academics">
+       
+        
+        <h3 class="ug">PG Courses</h3>
+        <div class="row">
+            <div class="col-md-3 mt-2 committee_block" onclick="navigateTo('applied-electronics.html')">
+                <img src="image3.jpg" class="com_img" alt="Applied Electronics">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Applied Electronics</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mt-2 committee_block" onclick="navigateTo('computer-science-engineering.html')">
+                <img src="image3.jpg" class="com_img" alt="Computer Science Engineering">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Computer Science Engineering</h4>
+                </div>
+            </div>
+    
+            <div class="col-md-3 mt-2 committee_block" onclick="navigateTo('power-electronics-drives.html')">
+                <img src="image3.jpg" class="com_img" alt="Power Electronics and Drives">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Power Electronics and Drives</h4>
+                </div>   
+            </div>
+    
+            <div class="col-md-3 mt-2 committee_block" onclick="navigateTo('vlsi-design.html')">
+                <img src="image3.jpg" class="com_img" alt="VLSI Design">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>VLSI Design</h4>
+                </div>
+            </div>
+        </div>
+        <script>
+            function navigateTo(url) {
+                window.location.href = url;
+            }
+        </script>
+    
+        <div class="row">
+            <div class="col-md-3 mt-2 committee_block">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Engineering Design</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mt-2 committee_block">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Thermal Engineering</h4>
+                </div>
+            </div>
+    
+            <div class="col-md-3 mt-2 committee_block">
+                <img src="image3.jpg" class="com_img">
+                <div class="committee_content text-white">
+                    <h4 class="com_head">M.E <br>Structural Engineering</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Admissions Section -->
+    <section id="admissions">
+        <h2>Admissions</h2>
+        <h3 class="text-center mb-4">Under Graduate Courses</h3>
+       
+        <ul>
+            <a href="ap1.html"><li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Civil Engineering</li></a>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Mechanical Engineering</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Electrical &amp; Electronics Engineering</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Electronics &amp; Communication Engineering</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Computer Science &amp; Engineering</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.E Bio Medical Engineering</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.Tech Artificial Intelligence and Data Science</li>
+            <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>B.Tech Information Technology</li>
+        </ul>
+        <a href="ap1.html" class="apply-button">Apply</a>
+        <div class="pg_courses spad">
+            <h3 class="text-center mb-4">Post Graduate Courses</h3>
+            <ul>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Structural Engineering</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Engineering Design</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Power Electronics &amp; Drives</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E VLSI Design</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Computer Science &amp; Engineering</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Applied Electronics</li>
+                <li><i class="fa fa-check-square-o mb-3" style="color:#358854;margin-right:20px;"></i>M.E Thermal Engineering</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities">
+        <h2>Facilities</h2>
+  
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty List</title>
+    <style>
+       
+
+        .faculty-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .faculty-table th,
+        .faculty-table td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .faculty-table th {
+            background-color: #333;
+        }
+
+        .faculty-table tr:nth-child(even) {
+            background-color: #444;
+        }
+
+        .faculty-table tr:hover {
+            background-color: #555;
+        }
+        
+    </style>
+
+
+    <h1>Faculty List</h1>
+    <section class="service-section pt-5 pb-5" style="background-color: #69aed3;">
+        <div class="container-fluid services" data-aos="fade-up" data-aos-duration="3000">
+            <div class="section-title">
+                <h3 class="text-center style_heading">OUR FACILITIES</h3>
+                <p class="com_content text-center mb-5">Our college provides state-of-the-art infrastructure,
+                    equipped with modern amenities to support academic and extracurricular activities. <br>
+                    From spacious classrooms to a vibrant hostel life, we ensure a conducive environment
+                    for holistic learning and growth.</p>
+            </div>
+        </div>
+        <div class="container-fluid pt-5 facilities" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row" style="margin-right: 0;">
+                <div class="owl-carousel owl-theme" id="facilities-carousel">
+                    <!-- Individual Service Items -->
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-hotel"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Hostel</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Canteen</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-medal"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Sports</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-bus"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Transport</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-book"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Library</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-flask"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Laboratory</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Gymnasium</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-wheelchair"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Facilities for disabled</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-solid fa-tv"></i>
+                        </div>
+                        <div class="service-content">
+                            <a href="facility.html">
+                                <h4>Computer Center</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    
+    <table class="faculty-table">
+        <thead>
+            <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Qualification</th>
+                <th scope="col">Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>MR.C.VELAYUTHAM</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mr.T.NAGARAJ</td>
+                <td>B.E.,M.E.,PhD.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Mr.T.KARTHIMANI</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Mr.S.THIRUMURUGAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Mr.A.VILDAN PRAKASH</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Mr.SANOOP JOSE</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Mr.R.KATHIRAVAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Mr.R.JANARTHANA RAHUL</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Mr.R.SATHEESH</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Mr.A.PRINCE REGAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>Mr.ANAND</td>
+                <td>B.E.,M.E.,</td>
+                <td>MECH</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td>Mr.C.BALAJI</td>
+                <td>B.E.,M.E.,</td>
+                <td>CIVIL</td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <td>Mr.A.JASPHER FELIK AROCKIARAJ</td>
+                <td>B.E.,M.E.,</td>
+                <td>CIVIL</td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <td>Ms.MADHU MATHI SURIYA E</td>
+                <td>B.E.,M.E.,</td>
+                <td>CIVIL</td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <td>Mr.MUTHUPRAKASH</td>
+                <td>B.E.,M.E.,</td>
+                <td>CIVIL</td>
+            </tr>
+            <tr>
+                <th scope="row">16</th>
+                <td>Mr.S.BALA KUMAR</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">17</th>
+                <td>Mrs.S.SUJITHA</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">18</th>
+                <td>Mrs.MANIM.EGALAI</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">19</th>
+                <td>Mrs.M.SUMATHI</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">20</th>
+                <td>ARULPRAKESH</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">21</th>
+                <td>G.DIVYA</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">22</th>
+                <td>Mr.S.SAMYVELAUTHEM</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">23</th>
+                <td>Mr.R.MUTHURAMALINGAM</td>
+                <td>B.E.,M.E.,</td>
+                <td>EEE</td>
+            </tr>
+            <tr>
+                <th scope="row">24</th>
+                <td>Mr.R.MUTHURAMALINGAM</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">25</th>
+                <td>MR.S.SENTHIL KUMARAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">26</th>
+                <td>Ms.A.ROSARIYO</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">27</th>
+                <td>Mr.A.SATHIS</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">28</th>
+                <td>Mr.V.RAJESH</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">29</th>
+                <td>Mr.THAMARAIKANNAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">30</th>
+                <td>Mr.S.GOVINDARAJ</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">31</th>
+                <td>Mr.I.KARTHIKEYAN</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">32</th>
+                <td>Ms.J.SAHAYA SOPHIA</td>
+                <td>B.E.,M.E.,</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <th scope="row">33</th>
+                <td>MR.S.SASIKUMAR</td>
+                <td>B.E.,M.E.,</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <th scope="row">34</th>
+                <td>Ms.R.GIRIJA</td>
+                <td>B.E.,M.E.,</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <th scope="row">35</th>
+                <td>Ms.APARNAPANDI</td>
+                <td>B.E.,M.E.,</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <th scope="row">36</th>
+                <td>MrS.RUBAN CHAKARAVARTHY</td>
+                <td>B.E.,M.E.,</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <th scope="row">37</th>
+                <td>Dr.N.KARTHIKEYAN</td>
+                <td>Bsc.,MSc.,M.Phil.,Phd.,</td>
+                <td>S&H</td>
+            </tr>
+            <tr>
+                <th scope="row">38</th>
+                <td>Mr.M.NAZIR HUSSAIN</td>
+                <td>Bsc.,MSc.,M.Phil</td>
+                <td>S&H</td>
+            </tr>
+            <tr>
+                <th scope="row">39</th>
+                <td>DR.G.SIVAGAMI</td>
+                <td>Bsc.,MSc.,Phd.,</td>
+                <td>S&H</td>
+            </tr>
+            <tr>
+                <th scope="row">40</th>
+                <td>Mr.ARUNPANDIYAN</td>
+                <td>B.A.,M.A.,M.Phil</td>
+                <td>S&H</td>
+            </tr>
+            <tr>
+                <th scope="row">41</th>
+                <td>Mr.PALPANDI P</td>
+                <td>Bsc.,MSc.,Phd.,</td>
+                <td>S&H</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+				
+
+        
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+       
+        <form action="antonyraj22an2005@gmail.com" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit " >Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 SBM College. All Rights Reserved.</p>
+        <p><a href="https://www.sbmcollege.edu">www.sbmcollege.edu</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
